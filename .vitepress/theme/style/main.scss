@@ -107,8 +107,9 @@ html {
 }
 
 // 去除移动端点击高亮
-button, a, .btn {
+button, a, .btn, .skills-item, .menu-btn, .nav-btn, .about-item, * {
   -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 }
 
 html {
