@@ -3,12 +3,10 @@
     <header class="header">
       <h1 class="title">清远市博爱学校</h1>
       <p class="subtitle">博爱 · 博学 · 博大 | 成立于1998年</p>
-      <i class="fas fa-school decoration decoration-1"></i>
-      <i class="fas fa-graduation-cap decoration decoration-2"></i>
     </header>
     
     <div class="content-grid">
-      <div class="card animated">
+      <div class="card blue-card animated">
         <h2 class="card-title"><i class="fas fa-school"></i> 学校概况</h2>
         <div class="card-content">
           <p>清远市博爱学校成立于1998年，是由清远市红十字会创办的一所大型现代化民办学校，集幼儿园、小学、初中和高中于一体。</p>
@@ -16,7 +14,7 @@
         </div>
       </div>
       
-      <div class="card animated delay-1">
+      <div class="card green-card animated delay-1">
         <h2 class="card-title"><i class="fas fa-user-tie"></i> 领导团队</h2>
         <div class="card-content">
           <p><strong>现任校长：</strong>马正军</p>
@@ -26,7 +24,7 @@
         </div>
       </div>
       
-      <div class="card animated delay-2">
+      <div class="card orange-card animated delay-2">
         <h2 class="card-title"><i class="fas fa-trophy"></i> 学校荣誉</h2>
         <div class="card-content">
           <p>2010年，学校荣获"清远市清城区科普特色学校"和"清城区德育示范学校"称号</p>
@@ -40,53 +38,62 @@
     <div class="highlight">
       <h2 class="highlight-title">新校区发展里程碑</h2>
       <div class="content-grid">
-        <div class="card animated">
-          <div class="achievement">
-            <div class="achievement-year">2020年9月1日</div>
-            <p>新校区启用，设为中学部，旧校区仍为小学部</p>
+        <div class="card image-card animated" :style="{ backgroundImage: 'url(https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)' }">
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <div class="achievement">
+              <div class="achievement-year">2020年9月1日</div>
+              <p>新校区启用，设为中学部，旧校区仍为小学部</p>
+            </div>
           </div>
         </div>
         
-        <div class="card animated delay-1">
-          <div class="achievement">
-            <div class="achievement-year">2021年12月26日</div>
-            <p>学校成为华师附中在清远授牌的唯一"优质生源基地"</p>
+        <div class="card image-card animated delay-1" :style="{ backgroundImage: 'url(https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)' }">
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <div class="achievement">
+              <div class="achievement-year">2021年12月26日</div>
+              <p>学校成为华师附中在清远授牌的唯一"优质生源基地"</p>
+            </div>
           </div>
         </div>
         
-        <div class="card animated delay-2">
-          <div class="achievement">
-            <div class="achievement-year">2025年</div>
-            <p>与华南师大附中联合创办"博爱・华附海航少年班"，旨在培养热爱海空、适合飞行、素质全面的精英苗子</p>
+        <div class="card image-card animated delay-2" :style="{ backgroundImage: 'url(https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)' }">
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <div class="achievement">
+              <div class="achievement-year">2025年</div>
+              <p>与华南师大附中联合创办"博爱・华附海航少年班"，旨在培养热爱海空、适合飞行、素质全面的精英苗子</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     
     <div class="stats-container">
-      <div class="stat-box animated">
+      <div class="stat-box blue-bg animated">
         <span class="stat-number">{{ teacherCount }}</span>
         <div class="stat-label">教师人数</div>
       </div>
       
-      <div class="stat-box animated delay-1">
+      <div class="stat-box green-bg animated delay-1">
         <span class="stat-number">{{ formalTeachers }}</span>
         <div class="stat-label">事业编制教师</div>
       </div>
       
-      <div class="stat-box animated delay-2">
+      <div class="stat-box orange-bg animated delay-2">
         <span class="stat-number">{{ seniorTeachers }}%</span>
         <div class="stat-label">高级教师占比</div>
       </div>
       
-      <div class="stat-box animated delay-3">
+      <div class="stat-box purple-bg animated delay-3">
         <span class="stat-number">{{ experiencedTeachers }}%</span>
         <div class="stat-label">5年以上教龄教师</div>
       </div>
     </div>
     
     <div class="content-grid">
-      <div class="card animated">
+      <div class="card blue-card animated">
         <h2 class="card-title"><i class="fas fa-chalkboard-teacher"></i> 师资力量</h2>
         <div class="card-content">
           <p>学校现有教师200余人，其中事业编制教师90人，教师队伍的年龄结构、性别结构、地域结构、学历结构、专业结构、职称结构合理。</p>
@@ -94,9 +101,10 @@
         </div>
       </div>
       
-      <div class="card animated delay-1">
-        <h2 class="card-title"><i class="fas fa-building"></i> 学校环境</h2>
+      <div class="card image-card animated delay-1" :style="{ backgroundImage: 'url(https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)' }">
+        <div class="card-overlay"></div>
         <div class="card-content">
+          <h2 class="card-title"><i class="fas fa-building"></i> 学校环境</h2>
           <p>学校按省一级学校的标准设置建设，各项硬件设施配备先进齐全：</p>
           <ul class="feature-list">
             <li><i class="fas fa-check"></i> 30多间功能专用室</li>
@@ -108,7 +116,7 @@
       </div>
     </div>
     
-    <div class="card animated">
+    <div class="card purple-card animated">
       <h2 class="card-title"><i class="fas fa-star"></i> 教学特色</h2>
       <div class="card-content">
         <p>学校实施多元化的教学特色：</p>
@@ -123,11 +131,11 @@
       </div>
     </div>
     
-    <div class="motto animated">
+    <div class="motto blue-card animated">
       "以师为本、学生为重" - 遵循国家教育方针，注重学生综合素质和实验能力的培养，为社会主义建设事业培育仁厚睿智、学识渊博、志向远大的接班人。
     </div>
     
-    <div class="card animated">
+    <div class="card orange-card animated">
       <h2 class="card-title"><i class="fas fa-medal"></i> 办学成绩</h2>
       <div class="card-content">
         <div class="achievement">
@@ -149,7 +157,7 @@
       </div>
     </div>
     
-    <footer class="footer animated">
+    <footer class="footer green-card animated">
       <p>清远市博爱学校 © 2023 | 博爱 · 博学 · 博大</p>
     </footer>
   </div>
@@ -225,10 +233,8 @@ export default {
   margin: 0 auto;
   padding: 30px 20px;
   font-family: 'Noto Sans SC', sans-serif;
-  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
   color: #333;
   line-height: 1.7;
-  min-height: 100vh;
 }
 
 .header {
@@ -241,17 +247,6 @@ export default {
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
-}
-
-.header::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-  transform: rotate(30deg);
 }
 
 .title {
@@ -279,12 +274,10 @@ export default {
 }
 
 .card {
-  background-color: white;
   border-radius: 16px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.12);
   padding: 30px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  border-top: 5px solid #3a86ff;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -292,31 +285,60 @@ export default {
   overflow: hidden;
 }
 
-.card::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, transparent 50%, rgba(58, 134, 255, 0.05) 50%);
-  border-top-left-radius: 100%;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
 }
 
-.card:hover::after {
-  width: 100px;
-  height: 100px;
+.blue-card {
+  background: linear-gradient(135deg, #3a86ff 0%, #5e60ce 100%);
+  color: white;
+}
+
+.green-card {
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+  color: white;
+}
+
+.orange-card {
+  background: linear-gradient(135deg, #ff9a8b 0%, #ff6a88 100%);
+  color: white;
+}
+
+.purple-card {
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+  color: white;
+}
+
+.image-card {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 280px;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+}
+
+.card-content p {
+  margin-bottom: 18px;
 }
 
 .card-title {
   font-size: 1.6rem;
-  color: #3a86ff;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -326,38 +348,19 @@ export default {
 .card-title i {
   margin-right: 12px;
   font-size: 2rem;
-  background: linear-gradient(135deg, #3a86ff 0%, #5e60ce 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.card-content {
-  color: #555;
-  flex-grow: 1;
-}
-
-.card-content p {
-  margin-bottom: 18px;
+.blue-card .card-title i,
+.green-card .card-title i,
+.orange-card .card-title i,
+.purple-card .card-title i,
+.image-card .card-title i {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .highlight {
-  background: linear-gradient(135deg, rgba(58, 134, 255, 0.1) 0%, rgba(78, 205, 196, 0.1) 100%);
-  padding: 40px 30px;
-  border-radius: 20px;
   margin: 40px 0;
-  border-left: 5px solid #4ecdc4;
   position: relative;
-  overflow: hidden;
-}
-
-.highlight::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg, #3a86ff 0%, #4ecdc4 100%);
 }
 
 .highlight-title {
@@ -394,23 +397,12 @@ export default {
 .stat-box {
   text-align: center;
   padding: 30px 20px;
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border-radius: 16px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.12);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  border: 1px solid rgba(58, 134, 255, 0.1);
   position: relative;
   overflow: hidden;
-}
-
-.stat-box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 5px;
-  height: 100%;
-  background: linear-gradient(to bottom, #3a86ff 0%, #4ecdc4 100%);
+  color: white;
 }
 
 .stat-box:hover {
@@ -418,17 +410,31 @@ export default {
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
 }
 
+.blue-bg {
+  background: linear-gradient(135deg, #3a86ff 0%, #5e60ce 100%);
+}
+
+.green-bg {
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+}
+
+.orange-bg {
+  background: linear-gradient(135deg, #ff9a8b 0%, #ff6a88 100%);
+}
+
+.purple-bg {
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
 .stat-number {
   font-size: 3rem;
   font-weight: 700;
-  color: #3a86ff;
   margin-bottom: 10px;
   display: block;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .stat-label {
-  color: #666;
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -440,20 +446,19 @@ export default {
 
 .feature-list li {
   padding: 12px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .feature-list li:hover {
-  background-color: rgba(58, 134, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.1);
   padding-left: 10px;
   border-radius: 8px;
 }
 
 .feature-list li i {
-  color: #3a86ff;
   margin-right: 15px;
   font-size: 1.2rem;
   width: 25px;
@@ -461,13 +466,13 @@ export default {
 }
 
 .achievement {
-  background-color: white;
   padding: 25px;
   border-radius: 16px;
   margin: 25px 0;
   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid #6ab04c;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .achievement:hover {
@@ -477,7 +482,6 @@ export default {
 
 .achievement-year {
   font-weight: 700;
-  color: #6ab04c;
   margin-bottom: 12px;
   font-size: 1.3rem;
   display: flex;
@@ -487,8 +491,8 @@ export default {
 .achievement-year::before {
   content: '✓';
   margin-right: 10px;
-  background: #6ab04c;
-  color: white;
+  background: rgba(255, 255, 255, 0.9);
+  color: #3a86ff;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -502,65 +506,19 @@ export default {
   text-align: center;
   font-style: italic;
   padding: 40px;
-  background: linear-gradient(135deg, rgba(58, 134, 255, 0.08) 0%, rgba(78, 205, 196, 0.08) 100%);
   border-radius: 20px;
   margin: 50px 0;
   font-size: 1.5rem;
-  color: #212529;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.12);
-  border: 1px solid rgba(58, 134, 255, 0.1);
   position: relative;
-}
-
-.motto::before, .motto::after {
-  content: '"';
-  font-size: 4rem;
-  color: rgba(58, 134, 255, 0.2);
-  position: absolute;
-  line-height: 1;
-}
-
-.motto::before {
-  top: 20px;
-  left: 30px;
-}
-
-.motto::after {
-  bottom: 0;
-  right: 30px;
 }
 
 .footer {
   text-align: center;
   margin-top: 70px;
   padding: 30px;
-  color: #666;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: white;
   border-radius: 16px;
   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.08);
-}
-
-.decoration {
-  position: absolute;
-  z-index: 0;
-  opacity: 0.03;
-  font-size: 20rem;
-  pointer-events: none;
-}
-
-.decoration-1 {
-  top: -80px;
-  right: -50px;
-  transform: rotate(15deg);
-  color: #3a86ff;
-}
-
-.decoration-2 {
-  bottom: -100px;
-  left: -60px;
-  transform: rotate(-10deg);
-  color: #4ecdc4;
 }
 
 @keyframes fadeIn {
