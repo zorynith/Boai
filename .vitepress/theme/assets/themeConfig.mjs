@@ -121,14 +121,14 @@ export const themeConfig = {
     {
       text: "友链",
       items: [
-        { text: "友链鱼塘", link: "/pages/friends", icon: "fish" },
-        { text: "友情链接", link: "/pages/link", icon: "people" },
+        { text: "哔哩哔哩", link: "#", icon: "fish" },
+        { text: "抖音", link: "#", icon: "people" },
       ],
     },
     {
       text: "关于",
       items: [
-        { text: "关于本站", link: "/pages/about", icon: "contacts" },
+        { text: "关于学校", link: "/pages/about", icon: "contacts" },
       ],
     },
   ],
@@ -177,9 +177,9 @@ export const themeConfig = {
       coverLayout: 'both',
       // 默认封面(随机展示)
       defaultCover: [
-        'https://example.com/1.avif',
-        'https://example.com/2.avif',
-        'https://example.com/3.avif'
+        '/images/default/default-1.jpg',
+        '/images/default/default-2.jpg',
+        '/images/default/default-3.jpg'
       ]
     }
   },

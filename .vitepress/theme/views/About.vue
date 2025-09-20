@@ -6,7 +6,7 @@
     </header>
     
     <div class="content-grid">
-      <div class="card blue-gradient animated">
+      <div class="card blue-transparent animated">
         <h2 class="card-title"><i class="fas fa-school"></i> 学校概况</h2>
         <div class="card-content">
           <p>清远市博爱学校成立于1998年，是由清远市红十字会创办的一所大型现代化民办学校，集幼儿园、小学、初中和高中于一体。</p>
@@ -14,7 +14,7 @@
         </div>
       </div>
       
-      <div class="card green-gradient animated delay-1">
+      <div class="card green-transparent animated delay-1">
         <h2 class="card-title"><i class="fas fa-user-tie"></i> 领导团队</h2>
         <div class="card-content">
           <p><strong>现任校长：</strong>马正军</p>
@@ -24,7 +24,7 @@
         </div>
       </div>
       
-      <div class="card purple-gradient animated delay-2">
+      <div class="card purple-transparent animated delay-2">
         <h2 class="card-title"><i class="fas fa-trophy"></i> 学校荣誉</h2>
         <div class="card-content">
           <p>2010年，学校荣获"清远市清城区科普特色学校"和"清城区德育示范学校"称号</p>
@@ -73,22 +73,22 @@
     <div class="stats-section">
       <h2 class="section-title">学校数据统计</h2>
       <div class="stats-container">
-        <div class="stat-box teal-gradient animated">
+        <div class="stat-box teal-transparent animated">
           <span class="stat-number">{{ teacherCount }}</span>
           <div class="stat-label">教师人数</div>
         </div>
         
-        <div class="stat-box blue-gradient animated delay-1">
+        <div class="stat-box blue-transparent animated delay-1">
           <span class="stat-number">{{ formalTeachers }}</span>
           <div class="stat-label">事业编制教师</div>
         </div>
         
-        <div class="stat-box purple-gradient animated delay-2">
+        <div class="stat-box purple-transparent animated delay-2">
           <span class="stat-number">{{ seniorTeachers }}%</span>
           <div class="stat-label">高级教师占比</div>
         </div>
         
-        <div class="stat-box green-gradient animated delay-3">
+        <div class="stat-box green-transparent animated delay-3">
           <span class="stat-number">{{ experiencedTeachers }}%</span>
           <div class="stat-label">5年以上教龄教师</div>
         </div>
@@ -96,7 +96,7 @@
     </div>
     
     <div class="content-grid">
-      <div class="card teal-gradient animated">
+      <div class="card teal-transparent animated">
         <h2 class="card-title"><i class="fas fa-chalkboard-teacher"></i> 师资力量</h2>
         <div class="card-content">
           <p>学校现有教师200余人，其中事业编制教师90人，教师队伍的年龄结构、性别结构、地域结构、学历结构、专业结构、职称结构合理。</p>
@@ -104,7 +104,7 @@
         </div>
       </div>
       
-      <div class="card image-card animated delay-1" :style="{ backgroundImage: 'url(https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)' }">
+      <div class="card image-card animated delay-1" :style="{ backgroundImage: 'url(https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)' }">
         <div class="card-overlay"></div>
         <div class="card-content">
           <h2 class="card-title"><i class="fas fa-building"></i> 学校环境</h2>
@@ -119,7 +119,7 @@
       </div>
     </div>
     
-    <div class="card coral-gradient animated">
+    <div class="card coral-transparent animated">
       <h2 class="card-title"><i class="fas fa-star"></i> 教学特色</h2>
       <div class="card-content">
         <p>学校实施多元化的教学特色：</p>
@@ -134,13 +134,13 @@
       </div>
     </div>
     
-    <div class="card blue-gradient motto animated">
+    <div class="card blue-transparent motto animated">
       <div class="card-content">
         <p class="motto-text">"以师为本、学生为重" - 遵循国家教育方针，注重学生综合素质和实验能力的培养，为社会主义建设事业培育仁厚睿智、学识渊博、志向远大的接班人。</p>
       </div>
     </div>
     
-    <div class="card orange-gradient animated">
+    <div class="card orange-transparent animated">
       <h2 class="card-title"><i class="fas fa-medal"></i> 办学成绩</h2>
       <div class="card-content">
         <div class="achievement">
@@ -162,7 +162,7 @@
       </div>
     </div>
     
-    <footer class="footer green-gradient animated">
+    <footer class="footer green-transparent animated">
       <p>清远市博爱学校 © 2023 | 博爱 · 博学 · 博大</p>
     </footer>
   </div>
@@ -238,28 +238,29 @@ export default {
   margin: 0 auto;
   padding: 30px 20px;
   font-family: 'Noto Sans SC', sans-serif;
-  color: #333;
+  color: #2c3e50;
   line-height: 1.7;
+  /* 移除了背景 */
 }
 
-/* 统一圆角设置 */
+/* 统一超大圆角设置 */
 :root {
-  --radius-xl: 24px;
-  --radius-lg: 20px;
-  --radius-md: 16px;
-  --radius-sm: 12px;
+  --radius-xxl: 32px;
+  --radius-xl: 28px;
+  --radius-lg: 24px;
+  --radius-md: 20px;
 }
 
 .header {
   text-align: center;
   margin-bottom: 50px;
   padding: 50px 30px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
   color: white;
-  border-radius: var(--radius-xl);
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
-  position: relative;
-  overflow: hidden;
+  border-radius: var(--radius-xxl);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .title {
@@ -267,7 +268,6 @@ export default {
   font-weight: 700;
   margin-bottom: 15px;
   letter-spacing: 1px;
-  position: relative;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -308,49 +308,51 @@ export default {
   border-radius: 2px;
 }
 
-/* 卡片基础样式 */
+/* 卡片基础样式 - 统一大圆角和透明效果 */
 .card {
-  border-radius: var(--radius-xl);
-  padding: 30px;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.12);
+  border-radius: var(--radius-xxl);
+  padding: 35px 30px;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
 }
 
-/* 渐变卡片样式 */
-.blue-gradient {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+/* 透明卡片样式 */
+.blue-transparent {
+  background: rgba(102, 126, 234, 0.7);
   color: white;
 }
 
-.green-gradient {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+.green-transparent {
+  background: rgba(72, 198, 239, 0.7);
   color: white;
 }
 
-.purple-gradient {
-  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+.purple-transparent {
+  background: rgba(170, 130, 227, 0.7);
   color: white;
 }
 
-.teal-gradient {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+.teal-transparent {
+  background: rgba(38, 194, 129, 0.7);
   color: white;
 }
 
-.coral-gradient {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+.coral-transparent {
+  background: rgba(255, 128, 171, 0.7);
   color: white;
 }
 
-.orange-gradient {
-  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+.orange-transparent {
+  background: rgba(255, 183, 143, 0.7);
   color: #2c3e50;
 }
 
@@ -359,10 +361,12 @@ export default {
   background-size: cover;
   background-position: center;
   color: white;
-  min-height: 280px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding: 0;
+  border-radius: var(--radius-xxl);
 }
 
 .card-overlay {
@@ -371,17 +375,19 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
   z-index: 1;
+  border-radius: var(--radius-xxl);
 }
 
-.card-content {
+.image-card .card-content {
+  padding: 35px 30px;
   position: relative;
   z-index: 2;
 }
 
 .card-title {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -390,11 +396,12 @@ export default {
 
 .card-title i {
   margin-right: 12px;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .card-content p {
   margin-bottom: 18px;
+  line-height: 1.8;
 }
 
 /* 统计区域 */
@@ -410,29 +417,31 @@ export default {
 
 .stat-box {
   text-align: center;
-  padding: 30px 20px;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.12);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 35px 25px;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: white;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .stat-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
 }
 
 .stat-number {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 10px;
   display: block;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .stat-label {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
+  opacity: 0.9;
 }
 
 /* 特色列表 */
@@ -442,8 +451,8 @@ export default {
 }
 
 .feature-list li {
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -451,52 +460,53 @@ export default {
 
 .feature-list li:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  padding-left: 10px;
-  border-radius: 8px;
+  padding-left: 15px;
+  border-radius: 12px;
 }
 
 .feature-list li i {
   margin-right: 15px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   width: 25px;
   text-align: center;
 }
 
 /* 成就样式 */
 .achievement {
-  padding: 20px;
-  border-radius: var(--radius-md);
+  padding: 25px;
+  border-radius: var(--radius-lg);
   margin: 20px 0;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .achievement:hover {
-  transform: translateX(5px);
-  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(8px);
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .achievement-year {
   font-weight: 700;
   margin-bottom: 12px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   display: flex;
   align-items: center;
 }
 
 .achievement-year::before {
   content: '✓';
-  margin-right: 10px;
+  margin-right: 12px;
   background: rgba(255, 255, 255, 0.9);
   color: #667eea;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* 格言样式 */
@@ -507,23 +517,30 @@ export default {
 
 .motto-text {
   font-style: italic;
-  font-size: 1.5rem;
-  line-height: 1.6;
+  font-size: 1.6rem;
+  line-height: 1.7;
   margin: 0;
+  text-align: center;
 }
 
 /* 页脚 */
 .footer {
   text-align: center;
   margin-top: 70px;
-  padding: 30px;
-  border-radius: var(--radius-lg);
+  padding: 35px;
+  border-radius: var(--radius-xl);
 }
 
 /* 动画效果 */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 .animated {
@@ -553,11 +570,12 @@ export default {
   }
   
   .motto-text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   
   .card {
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xl);
+    padding: 25px 20px;
   }
 }
 
@@ -571,11 +589,15 @@ export default {
   }
   
   .card-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   
   .section-title {
     font-size: 1.8rem;
+  }
+  
+  .stat-number {
+    font-size: 2.8rem;
   }
 }
 </style>
