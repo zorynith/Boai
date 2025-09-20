@@ -125,11 +125,11 @@
           </div>
         </div>
       </div>
-      <!-- 信息 -->
+      <!-- 位置 -->
       <div class="about-item child">
         <div
           class="about-item map image"
-          style="background-image: url(https://pic.efefee.cn/uploads/2024/04/15/661cbccc56af5.webp)"
+          style="background-image: url(https://boai.minelibs.eu.org/images/school/ditu.png)"
         >
           <span class="position">学校位于 <strong>广东清远市</strong></span>
         </div>
