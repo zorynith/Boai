@@ -101,10 +101,14 @@ html {
   }
 }
 
-// 全局基础样式
 * {
   -webkit-user-drag: none;
   box-sizing: border-box;
+}
+
+// 去除移动端点击高亮
+button, a, .btn {
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {

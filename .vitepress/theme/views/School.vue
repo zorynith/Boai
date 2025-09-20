@@ -41,9 +41,10 @@
           <span class="list-item">2025 年高中部体艺特长生招生，游泳和羽毛球被选为 2024-2026 年体教合作共建学校暨体育后备人才基地。</span>
         </div>
         <img
-          class="career-img"
+          class="career-img gradient-img"
           src="https://boai.minelibs.eu.org/images/school/lishi.jpg"
           alt="发展"
+          style="position: relative; z-index: 1;"
         />
       </div>
     </div>
@@ -435,9 +436,14 @@ onMounted(() => {
           bottom: -10px;
           left: 0;
           width: 100%;
+          z-index: 1;
           @media (max-width: 768px) {
             position: static;
           }
+        }
+        .gradient-img {
+          mask-image: linear-gradient(to bottom, transparent 0%, #000 60%, #000 100%);
+          -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 60%, #000 100%);
         }
       }
       &.game {

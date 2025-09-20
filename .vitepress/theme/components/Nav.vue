@@ -54,8 +54,8 @@
           <!-- 开往 -->
           <a
             class="menu-btn nav-btn travellings"
-            title="开往-友链接力"
-            href="https://www.travellings.cn/go.html"
+            title="开往-Minelibs"
+            href="https://minelibs.eu.org"
             target="_blank"
           >
             <i class="iconfont icon-subway"></i>
