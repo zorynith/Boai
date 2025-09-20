@@ -36,6 +36,9 @@ jobs:
           
       - name: Install dependencies
         run: pnpm install
+
+      - name: Ensure dist directory exists
+        run: mkdir -p .vitepress/dist
         
       - name: Build with Boai site
         run: |
