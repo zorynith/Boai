@@ -19,18 +19,7 @@
         <span class="tip">更新于</span>
         <span class="name">{{ formatTimestamp(postData?.lastModified) }}</span>
       </div>
-      <div class="meta-item cc">
-        <span class="tip">许可协议</span>
-        <a
-          class="name"
-          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans"
-          target="_blank"
-        >
-          CC BY-NC-SA 4.0
-        </a>
-      </div>
     </div>
-    <span class="meta-tip">署名-非商业性使用-相同方式共享 4.0 国际</span>
   </div>
 </template>
 
