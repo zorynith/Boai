@@ -55,9 +55,10 @@
         <span class="title2" style="color: var(--color)">学校现有教师200余人</span>
         <span class="list-item">其中事业编制教师90人，教师队伍的年龄结构、性别结构、地域结构、学历结构、专业结构、职称结构合理。教师学历百分之百达标，硕士研究生3人，高级教师占教师总数的65%，每学年教师流动率控制在5%以内。幼儿园和小学部校龄5年以上的教师占75%。</span>
         <img
-          src="https://boai.minelibs.eu.org/images/school/jiaoshi.jpg"
+          src="https://boai.minelibs.eu.org/images/school/jiaoshi.png"
           alt="师资力量"
-          class="male"
+          class="male blur-img"
+          style="filter: blur(8px); opacity: 0.5;"
         />
       </div>
       <!-- 学校环境 -->
@@ -106,7 +107,7 @@
         class="about-item static image"
         style="
           --color: #0f1114;
-          background-image: url(https://pic.efefee.cn/uploads/2024/04/15/661c8fbf226d3.webp);
+          background-image: url(https://boai.minelibs.eu.org/images/school/shuju.jpg);
         "
       >
         <div class="image-content">
