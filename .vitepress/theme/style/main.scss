@@ -260,3 +260,10 @@ a {
     color: inherit;
   }
 }
+
+
+ // 移动端防高亮
+ a, button, .btn, .skills-item, .menu-btn, .nav-btn, .about-item, * {
+  -webkit-tap-highlight-color: transparent !important;
+  tap-highlight-color: transparent !important;
+}
