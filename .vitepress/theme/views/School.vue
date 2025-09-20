@@ -42,8 +42,8 @@
         </div>
         <img
           class="career-img"
-          src="https://pic.efefee.cn/uploads/2024/02/22/65d71db18bcf9.png"
-          alt="career"
+          src="https://boai.minelibs.eu.org/images/school/lishi.jpg"
+          alt="发展"
         />
       </div>
     </div>
@@ -73,7 +73,7 @@
         class="about-item like image"
         style="
           --color: #0c0e20;
-          background-image: url(https://pic.efefee.cn/uploads/2024/02/27/65dd812567723.webp);
+          background-image: url(https://boai.minelibs.eu.org/images/school/1.jpg);
         "
       >
         <div class="image-content">
@@ -88,7 +88,7 @@
         class="about-item like image"
         style="
           --color: #7b3c25;
-          background-image: url(https://pic.efefee.cn/uploads/2024/02/27/65dd836099d16.webp);
+          background-image: url(https://boai.minelibs.eu.org/images/school/2.jpg);
         "
       >
         <div class="image-content">
