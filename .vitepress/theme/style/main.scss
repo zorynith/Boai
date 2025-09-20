@@ -267,17 +267,3 @@ a {
   -webkit-tap-highlight-color: transparent !important;
   tap-highlight-color: transparent !important;
 }
-
-
-html {
-  touch-action: manipulation;
-}
-
-@media screen and (max-width: 768px) {
-  html {
-    overscroll-behavior: contain;
-  }
-}
-
-// 禁止用户缩放
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
