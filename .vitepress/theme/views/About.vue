@@ -6,7 +6,7 @@
     </header>
     
     <div class="content-grid">
-      <div class="card blue-transparent animated">
+      <div class="card blue-card animated">
         <h2 class="card-title"><i class="fas fa-school"></i> 学校概况</h2>
         <div class="card-content">
           <p>清远市博爱学校成立于1998年，是由清远市红十字会创办的一所大型现代化民办学校，集幼儿园、小学、初中和高中于一体。</p>
@@ -14,7 +14,7 @@
         </div>
       </div>
       
-      <div class="card green-transparent animated delay-1">
+      <div class="card green-card animated delay-1">
         <h2 class="card-title"><i class="fas fa-user-tie"></i> 领导团队</h2>
         <div class="card-content">
           <p><strong>现任校长：</strong>马正军</p>
@@ -24,7 +24,7 @@
         </div>
       </div>
       
-      <div class="card purple-transparent animated delay-2">
+      <div class="card purple-card animated delay-2">
         <h2 class="card-title"><i class="fas fa-trophy"></i> 学校荣誉</h2>
         <div class="card-content">
           <p>2010年，学校荣获"清远市清城区科普特色学校"和"清城区德育示范学校"称号</p>
@@ -73,22 +73,22 @@
     <div class="stats-section">
       <h2 class="section-title">学校数据统计</h2>
       <div class="stats-container">
-        <div class="stat-box teal-transparent animated">
+        <div class="stat-box teal-bg animated">
           <span class="stat-number">{{ teacherCount }}</span>
           <div class="stat-label">教师人数</div>
         </div>
         
-        <div class="stat-box blue-transparent animated delay-1">
+        <div class="stat-box blue-bg animated delay-1">
           <span class="stat-number">{{ formalTeachers }}</span>
           <div class="stat-label">事业编制教师</div>
         </div>
         
-        <div class="stat-box purple-transparent animated delay-2">
+        <div class="stat-box purple-bg animated delay-2">
           <span class="stat-number">{{ seniorTeachers }}%</span>
           <div class="stat-label">高级教师占比</div>
         </div>
         
-        <div class="stat-box green-transparent animated delay-3">
+        <div class="stat-box green-bg animated delay-3">
           <span class="stat-number">{{ experiencedTeachers }}%</span>
           <div class="stat-label">5年以上教龄教师</div>
         </div>
@@ -96,7 +96,7 @@
     </div>
     
     <div class="content-grid">
-      <div class="card teal-transparent animated">
+      <div class="card teal-card animated">
         <h2 class="card-title"><i class="fas fa-chalkboard-teacher"></i> 师资力量</h2>
         <div class="card-content">
           <p>学校现有教师200余人，其中事业编制教师90人，教师队伍的年龄结构、性别结构、地域结构、学历结构、专业结构、职称结构合理。</p>
@@ -119,7 +119,7 @@
       </div>
     </div>
     
-    <div class="card coral-transparent animated">
+    <div class="card coral-card animated">
       <h2 class="card-title"><i class="fas fa-star"></i> 教学特色</h2>
       <div class="card-content">
         <p>学校实施多元化的教学特色：</p>
@@ -134,13 +134,13 @@
       </div>
     </div>
     
-    <div class="card blue-transparent motto animated">
+    <div class="card blue-card motto animated">
       <div class="card-content">
         <p class="motto-text">"以师为本、学生为重" - 遵循国家教育方针，注重学生综合素质和实验能力的培养，为社会主义建设事业培育仁厚睿智、学识渊博、志向远大的接班人。</p>
       </div>
     </div>
     
-    <div class="card orange-transparent animated">
+    <div class="card orange-card animated">
       <h2 class="card-title"><i class="fas fa-medal"></i> 办学成绩</h2>
       <div class="card-content">
         <div class="achievement">
@@ -162,7 +162,7 @@
       </div>
     </div>
     
-    <footer class="footer green-transparent animated">
+    <footer class="footer green-card animated">
       <p>清远市博爱学校 © 2023 | 博爱 · 博学 · 博大</p>
     </footer>
   </div>
@@ -240,7 +240,6 @@ export default {
   font-family: 'Noto Sans SC', sans-serif;
   color: #2c3e50;
   line-height: 1.7;
-  /* 移除了背景 */
 }
 
 /* 统一超大圆角设置 */
@@ -259,8 +258,6 @@ export default {
   color: white;
   border-radius: var(--radius-xxl);
   box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .title {
@@ -308,7 +305,7 @@ export default {
   border-radius: 2px;
 }
 
-/* 卡片基础样式 - 统一大圆角和透明效果 */
+/* 卡片基础样式 - 统一大圆角 */
 .card {
   border-radius: var(--radius-xxl);
   padding: 35px 30px;
@@ -316,8 +313,6 @@ export default {
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .card:hover {
@@ -325,35 +320,35 @@ export default {
   box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
 }
 
-/* 透明卡片样式 */
-.blue-transparent {
-  background: rgba(102, 126, 234, 0.7);
+/* 卡片颜色样式 */
+.blue-card {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%);
   color: white;
 }
 
-.green-transparent {
-  background: rgba(72, 198, 239, 0.7);
+.green-card {
+  background: linear-gradient(135deg, rgba(72, 198, 239, 0.85) 0%, rgba(111, 134, 214, 0.85) 100%);
   color: white;
 }
 
-.purple-transparent {
-  background: rgba(170, 130, 227, 0.7);
+.purple-card {
+  background: linear-gradient(135deg, rgba(170, 130, 227, 0.85) 0%, rgba(129, 113, 190, 0.85) 100%);
   color: white;
 }
 
-.teal-transparent {
-  background: rgba(38, 194, 129, 0.7);
+.teal-card {
+  background: linear-gradient(135deg, rgba(38, 194, 129, 0.85) 0%, rgba(60, 179, 210, 0.85) 100%);
   color: white;
 }
 
-.coral-transparent {
-  background: rgba(255, 128, 171, 0.7);
+.coral-card {
+  background: linear-gradient(135deg, rgba(255, 128, 171, 0.85) 0%, rgba(255, 169, 129, 0.85) 100%);
   color: white;
 }
 
-.orange-transparent {
-  background: rgba(255, 183, 143, 0.7);
-  color: #2c3e50;
+.orange-card {
+  background: linear-gradient(135deg, rgba(255, 183, 143, 0.85) 0%, rgba(255, 143, 178, 0.85) 100%);
+  color: white;
 }
 
 /* 图片卡片样式 */
@@ -366,7 +361,6 @@ export default {
   flex-direction: column;
   justify-content: flex-end;
   padding: 0;
-  border-radius: var(--radius-xxl);
 }
 
 .card-overlay {
@@ -375,7 +369,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 100%);
   z-index: 1;
   border-radius: var(--radius-xxl);
 }
@@ -422,13 +416,27 @@ export default {
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: white;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .stat-box:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+}
+
+.teal-bg {
+  background: linear-gradient(135deg, rgba(38, 194, 129, 0.9) 0%, rgba(60, 179, 210, 0.9) 100%);
+}
+
+.blue-bg {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+}
+
+.purple-bg {
+  background: linear-gradient(135deg, rgba(170, 130, 227, 0.9) 0%, rgba(129, 113, 190, 0.9) 100%);
+}
+
+.green-bg {
+  background: linear-gradient(135deg, rgba(72, 198, 239, 0.9) 0%, rgba(111, 134, 214, 0.9) 100%);
 }
 
 .stat-number {
@@ -477,7 +485,6 @@ export default {
   border-radius: var(--radius-lg);
   margin: 20px 0;
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
